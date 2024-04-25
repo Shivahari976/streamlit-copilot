@@ -5,7 +5,8 @@
 
 
 To run the component locally:
-0. Replace your Openai's API key at the file of /component/frontend/src/streamlit_copilot.tsx，
+
+0. Replace your Openai's API key in the file of /component/frontend/src/streamlit_copilot.tsx，
 ```
 const headers = {
     'Content-Type': 'application/json',
