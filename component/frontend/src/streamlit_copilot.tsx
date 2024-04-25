@@ -190,12 +190,12 @@ private callApi = async (text: string, api_upl: string): Promise<string> => {
   const {prompt_template, api_url, height, fontFamily, border, ...model_kwargs} = this.props.args;
   const prompt = prompt_template.replace("{text}", text); // format the prompt
   const payload = {
-    prompt: prompt,
-    ...model_kwargs,
-    echo: false
+    "prompt":"You are an article continuation assistant that continues the following，"+prompt,
+    "model": "gpt-3.5-turbo-instruct"
   };
   const headers = {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
   };
 
   try {
