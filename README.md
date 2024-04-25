@@ -1,10 +1,18 @@
-# Streamlit Copilot
+# Streamlit Copilot based on Openai's API
 
 ![Copilot light](resources/copilot_light.gif)
 ![Copilot dark](resources/copilot_dark.gif)
 
 
 To run the component locally:
+0. Replace your Openai's API key at the file of /component/frontend/src/streamlit_copilot.tsx，
+```
+const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  };
+```
+
 1. Ensure that you have correct versions of Node and NPM installed:
 - npm version: `6.14.13`
 - node version: `14.17.3`
