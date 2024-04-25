@@ -29,7 +29,7 @@ def copilot(prompt_template, api_url, rpm_limit=100, height: int = 100, font_fam
 if not _RELEASE:
     value = copilot(
         prompt_template="{text}",
-        api_url="https://trusty-humble-jackal.ngrok-free.app/v1/completions",
+        api_url="https://api.openai.com/v1/completions",
         rpm_limit=20,
         max_tokens=10,
         stop=["\n", "."],
